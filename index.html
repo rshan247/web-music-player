@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="https://www.instagram.com/days__2__reach/">
+            <img src="F:\rshan\Js course\html css js projects\media web music player\logo.png" class="logo" height="150"/></a>
+            <ul>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="https://www.instagram.com/days__2__reach/"><b>Instagram</b></a></li>
+                <li><a href="#"><b>About</b> </a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="play-col">
+                <p>click here to listen</p>
+                <img src="F:\rshan\Js course\html css js projects\media web music player\play.png" id="icon"/>
+            </div>
+        </div>
+    </div>
+    <audio id="mysong">
+        <source src="F:\rshan\Js course\html css js projects\media web music player\tututu.mp3" type="audio/mpeg"/>
+    </audio>
+    <script>
+        var mysong =document.getElementById("mysong");
+        var icon= document.getElementById("icon");
+        icon.onclick= function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.src="F:/rshan/Js course/html css js projects/media web music player/pause.png";
+            }else{
+                mysong.pause();
+                icon.src="F:/rshan/Js course/html css js projects/media web music player/play.png";
+            }
+        }
+    </script>
+    
+</body>
+</html>
