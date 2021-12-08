@@ -37,12 +37,11 @@
     font-size: 15px;
 }
 .play-col{
-    position: fixed;
+    margin-top: 30%;
     bottom: 10px;
-    right: 10px;
-    align-items: center;
 }
 .play-col p{
+    text-align: center;
     font-size: 30px;
     color: rgb(208, 255, 0);
     font-weight: 400;
