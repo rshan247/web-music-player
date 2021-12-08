@@ -21,12 +21,12 @@
         <div>
             <div class="play-col">
                 <p>click here to listen</p>
-                <img src="F:\rshan\Js course\html css js projects\media web music player\play.png" id="icon"/>
+                <img src="media web music player\play.png" id="icon"/>
             </div>
         </div>
     </div>
     <audio id="mysong">
-        <source src="F:\rshan\Js course\html css js projects\media web music player\tututu.mp3" type="audio/mpeg"/>
+        <source src="media web music player\tututu.mp3" type="audio/mpeg"/>
     </audio>
     <script>
         var mysong =document.getElementById("mysong");
@@ -34,10 +34,10 @@
         icon.onclick= function(){
             if(mysong.paused){
                 mysong.play();
-                icon.src="F:/rshan/Js course/html css js projects/media web music player/pause.png";
+                icon.src="media web music player/pause.png";
             }else{
                 mysong.pause();
-                icon.src="F:/rshan/Js course/html css js projects/media web music player/play.png";
+                icon.src="media web music player/play.png";
             }
         }
     </script>
